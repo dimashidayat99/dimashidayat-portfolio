@@ -805,3 +805,9 @@
 .im-cc-bitcoin:before {
   content: '\e107';
 }
+.im-github:before {
+  content: '\e108'
+}
+.im-linkedin:before {
+  content: '\e109'
+}
