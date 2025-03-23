@@ -2219,6 +2219,97 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* Add some default spacing */
+.row.about-content.about-content--buttons {
+    margin-top: 110%; /* Adjust as needed */
+}
+
+@media (max-width: 1024px) {
+.row.about-content.about-content--buttons {
+    margin-top: 115%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 990px) {
+.row.about-content.about-content--buttons {
+    margin-top: 120%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 940px) {
+.row.about-content.about-content--buttons {
+    margin-top: 125%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 900px) {
+    .row.about-content.about-content--buttons {
+        margin-top: 130%; /* Adjust as needed */
+        }
+    }
+
+      /* Media query for screens with a maximum width of 768 pixels (common for tablets) */
+@media (max-width: 800px) {
+.row.about-content.about-content--buttons {
+    margin-top: 225%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 700px) {
+.row.about-content.about-content--buttons {
+    margin-top: 235%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 600px) {
+.row.about-content.about-content--buttons {
+    margin-top: 240%; /* Adjust as needed */
+    }
+}
+    
+@media (max-width: 500px) {
+.row.about-content.about-content--buttons {
+    margin-top: 255%; /* Adjust as needed */
+    }
+}
+
+/* Media query for screens with a maximum width of 480 pixels (common for mobile phones) */
+@media (max-width: 480px) {
+.row.about-content.about-content--buttons {
+    margin-top: 455%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 440px) {
+.row.about-content.about-content--buttons {
+    margin-top: 460%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 420px) {
+.row.about-content.about-content--buttons {
+    margin-top: 470%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 400px) {
+.row.about-content.about-content--buttons {
+    margin-top: 500%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 370px) {
+.row.about-content.about-content--buttons {
+    margin-top: 520%; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 330px) {
+.row.about-content.about-content--buttons {
+    margin-top: 540%; /* Adjust as needed */
+    }
+}
+
 /* ------------------------------------------------------------------- 
  * ## timeline - (_site-layout.scss) 
  * ------------------------------------------------------------------- */
@@ -2386,6 +2477,37 @@ html.no-csstransitions .home-content__main {
 .masonry__brick {
     float: left;
     padding: 0;
+}
+
+.masonry__brick2 {
+    float: none;
+    padding: 0;
+    display: inline-block;
+    width: 24%; /* Default width for larger screens */
+    margin: 0;
+    overflow: hidden;
+    
+  }
+
+
+@media (max-width: 1024px) {
+.masonry__brick2 {
+    width: 24%; 
+    }
+}
+
+  /* Media query for screens with a maximum width of 768 pixels (common for tablets) */
+@media (max-width: 800px) {
+.masonry__brick2 {
+    width: 32%; 
+    }
+}
+  
+/* Media query for screens with a maximum width of 480 pixels (common for mobile phones) */
+@media (max-width: 480px) {
+.masonry__brick2 {
+    width: 49%; 
+    }
 }
 
 .item-folio {
