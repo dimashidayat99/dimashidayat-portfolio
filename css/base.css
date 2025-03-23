@@ -428,6 +428,18 @@ input[type="password"], textarea {
     width: 50%;
 }
 
+.col-six2, .col-1-2 {
+    width: 50%;
+}
+
+.col-six3, .col-1-2 {
+    width: 50%;
+}
+
+.col-six4, .col-1-2 {
+    width: 50%;
+}
+
 .col-seven {
     width: 58.33333%;
 }
@@ -528,6 +540,12 @@ input[type="password"], textarea {
         width: 75%;
     }
     .tab-full {
+        width: 100%;
+    }
+    .tab-full2 {
+        width: 100%;
+    }
+    .tab-full3 {
         width: 100%;
     }
 }
@@ -707,6 +725,14 @@ input[type="password"], textarea {
         width: 50%;
     }
     .block-tab-full .col-block {
+        width: 100%;
+        clear: both;
+    }
+    .block-tab-full2 .col-block {
+        width: 100%;
+        clear: both;
+    }
+    .block-tab-full3 .col-block {
         width: 100%;
         clear: both;
     }
