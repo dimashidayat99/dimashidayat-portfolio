@@ -410,6 +410,7 @@
         });
     };
 
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a.smoothscroll').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -421,12 +422,16 @@
         });
     });
 
+    // Handle hash navigation on page load
     window.addEventListener('load', () => {
         if (window.location.hash) {
             const targetId = window.location.hash.substring(1);
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Delay scrolling to ensure the layout is fully loaded
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300); // Adjust delay as needed
             }
         }
     });
