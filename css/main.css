@@ -4217,6 +4217,23 @@ article.blog-single .blog-content {
     margin-right: 0;
 }
 
+.tag-link {
+    display: inline-block;
+    line-height: inherit;
+    border: 1px solid #862121;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    padding: 0 10px;
+    text-decoration: none; /* To remove the default underline */
+  }
+  
+  .tag-link:hover,
+  .tag-link:focus {
+    background-color: #862121;
+    border-color: #0D0A0B;
+    color: #FFFFFF;
+  }
+
 
 /* blog single page navigation
  * ------------------------------------------------- */
