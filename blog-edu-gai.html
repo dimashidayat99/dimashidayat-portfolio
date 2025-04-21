@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Personalized Learning with GAI</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/logo_web.png" type="image/x-icon">
+    <link rel="icon" href="images/logo_web.png" type="image/x-icon">
+
+</head>
+
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+            
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo-dimas.png" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li><a href="index.html#home" title="home">Home</a></li>
+                <li><a href="index.html#about" title="about">About</a></li>
+                <li class="current"><a class="smoothscroll" href="#works" title="blog">Project</a></li>
+                <li><a href="#resume" title="resume">Resume</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>	
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+        
+
+    </header> <!-- end s-header -->
+
+
+    <article class="blog-single">
+
+        <!-- page header/blog hero
+        ================================================== -->
+        <div class="page-header page-header--single page-hero" style="background-image:url(images/blog/blog-bg-02.jpg)">
+        
+            <div class="row page-header__content narrow">
+                <article class="col-full">
+                    <div class="page-header__info">
+                        <div class="page-header__cat">
+                            <a href="#0">Generative AI</a><a href="#0">Education</a>
+                        </div>
+                    </div>
+                    <h1 class="page-header__title">
+                        <a href="#0" title="">
+                            Personalized Learning with Generative AI:
+                        </a>
+                        <div>
+                        <a style="font-size: 20px;white-space: pre-line">Another way to implement generative AI in education system.</a>
+                    </div>
+                    </h1>
+                    <ul class="page-header__meta">
+                        <li class="date">September, 2023</li>
+                    </ul>
+                    
+                </article>
+            </div>
+    
+        </div> <!-- end page-header -->
+        
+
+        <div class="row blog-content">
+            <div class="col-full blog-content__main">
+
+                <h2 style="margin-top: 10px;">Current Education Systems</h2>
+
+                <p class="drop-cap" style="text-align: justify;">
+                    Education has traditionally been approached using a <b>“one size fits all”</b> system. This traditional system has been heavily criticized in recent years for being unable to address the demands of each student. However, due to a lack of solutions, the “one size fits all” education system is still being used nowadays even with the advancement of technology.
+                    he global education systems are moving in the direction of a more individualized, student-centered strategy where the traditional "one size fits all" approach has been moved to the <b>Smart Learning Environment</b>. This learning environment can be achieved through personalized or adaptive learning to improve the current educational system. The <b>Educational Recommendation System</b> that implements AI and data science methodology has been believed as one of the ways to achieve personalized adaptive learning.
+                </p>
+                
+                <h2>Problems in Educational Recommendation Systems</h2>
+                <p style="text-align: justify;">
+                    Currently, most of the conventional artificial intelligence models used in educational recommendation systems <b>do not achieve high enough performance</b> to meet the personal needs of the learners. Current educational recommendation systems have several <b>notable limitations</b> namely <b>cold-start problems</b> and <b>sparsity problems</b> associated with the <b>collaborative filtering</b> approach, <b>limited understanding of learning item features</b> associated with the <b>content-based approach</b> and <b>complexity of implementation</b> which is associated with the <b>knowledge-based approach and hybrid-based approach</b>. With this additional limitation, the current recommendation system often did <b>not achieve optimal performance</b>.
+                </p>
+
+                <h2>Education Data</h2>
+                <p style="text-align: justify;">
+                    The chosen dataset used in this project is <b>MOOCCube</b> dataset which later requires some pre-processing such as entities and features selection where the important entities and features will be selected while unnecessary entities and features will be ignored; data cleaning, the mandatory data pre-processing techniques; data sampling, to make the computational cost less expensive; data transformation, transform the data into usable form; data integration where several features and entities will be combined forming desired input data; data encoding, to transform categorical data into numerical value and data splitting for model training and testing. The dataset and more explanation of the dataset can be found in the <a href="http://moocdata.cn/data/MOOCCube">MOOCCube</a>.
+                </p>
+
+                <h2>Pre-processing and Modelling</h2>
+
+                <p style="text-align: justify;">
+                There are total 6 models of Generative Adversarial Networks (GANs) and its variants used which are GANs, MDGANs, Multi-GANs, Multi-MDGANs together with the baseline model which is collaborative filtering and content-based filtering. Each model use different method of data preparation.
+                </p>
+
+                <h3>GANs</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/edu_project/GAN_framework.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">GANs Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">GANs is a type of neural network used for generative modeling. It consists of two networks: a generator and a discriminator. The generator creates new data samples, while the discriminator tries to distinguish between real and generated samples. They are trained together in an adversarial manner, where the generator tries to fool the discriminator and the discriminator tries to become better at distinguishing real from fake. This competition leads to the generator learning to create increasingly realistic samples, making GANs useful for the main task in this project which is course recommendation. A detailed explanation of the GANs framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/tree/main/model/GAN" class="tag-link">model/GANs</a> directory.</p>
+
+                <h3>Multi-GANs</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/edu_project/Multi-GAN_framework.png"  alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Multi-GANs Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">Similar to GANs, Multi-GANs uses the same principle as GANs. However, Multi-GANs uses multiple GANs models to predict the top k course. The number of GANs models used is similar to the number of recommendations (k). In this project, all the recommendation is based on five recommendations which means five models of GANs were used to recommend five courses. Multi-GANs are a powerful extension of the GANs framework, allowing for a more nuanced and diverse generation of data by leveraging the strengths of multiple generative models working together. A detailed explanation of the Multi-GANs framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/tree/main/model/Multi-GAN" class="tag-link">model/Multi-GANs</a> directory.</p>
+
+                <h3>MDGANs</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/edu_project/MDGAN_framework.png"  alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">MDGANs Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">MDGAN is a variation of the traditional GANs architecture that employs multiple discriminators. The main idea behind MDGAN is to improve the stability and quality of generated samples by using multiple discriminators to provide feedback to the generator. In MDGAN, there are multiple discriminators, each focusing on a different aspect or feature of the generated samples. In this case, three discriminators were used. Discriminator one will focus on the course sequence, discriminator two will focus on the school sequence, and discriminator three will focus on the teacher sequence. Using multiple discriminators can help the generator learn more effectively by receiving feedback from different perspectives. MDGANs are often more stable during training compared to traditional GANs, as the generator is trained to fool multiple discriminators simultaneously. A detailed explanation of the MDGAN framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/tree/main/model/MDGAN" class="tag-link">model/MDGAN</a> directory.</p>
+
+                <h3>Multi-MDGANs</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/edu_project/Multi-MDGAN_framework.png"  alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Multi-MDGANs Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">Similar to MDGANs, Multi-MDGAN uses the same principle as MDGAN. However, Multi-MDGAN uses multiple MDGAN models to predict the top k course. The number of MDGAN models used is similar to the number of recommendations (k). In this project, all the recommendation is based on five recommendations which means five models of MDGAN were used to recommend five courses. Multi-MDGANs extend the idea of using multiple discriminators in a GANs setup to multiple MDGANs, allowing for a more complex and nuanced generation of data by leveraging the strengths of multiple generative models working together. A detailed explanation of the Multi-MDGAN framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/tree/main/model/Multi-MDGAN" class="tag-link">model/Multi-MDGAN</a> directory.</p>
+
+                <h3>Collaborative Filtering</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/edu_project/CF_framework.png"  alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Collaborative Filtering Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">Collaborative Filtering (CF) is a technique used in recommendation systems to predict a user's preferences for items based on the preferences of other users. The basic idea behind collaborative filtering is that if two users have similar preferences for a set of items, they are likely to have similar preferences for other items as well. A detailed explanation of the CF framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/tree/main/model/CF" class="tag-link">model/CF</a> directory.</p>
+
+                <h3>Content-based Filtering</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/edu_project/CB_framework.png"  alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Content-based Filtering Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">Content-Based (CB) recommendation is a technique used in recommendation systems to recommend items to users based on the features or characteristics of the items and the preferences of the users. Unlike collaborative filtering, which relies on the preferences of other users, content-based recommendation focuses on the attributes of the items themselves. A detailed explanation of the CB framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Personalized_Learning_With_GAI/tree/main/model/CB" class="tag-link">model/CB</a> directory.</p>
+
+                <h2>Evaluation</h2>
+
+                <p style="text-align: justify;">There are four evaluation metrics used in this project which are <b>Mean Average Precision (MAP), Hit Ratio (HR), Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain (NDCG)</b>. Since the output of the recommendation model is in the form of the top five recommendations, therefore, all the mentioned metrics will become MAP@5, HR@5, MRR@5, and NDGC@5. Using these metrics provides valuable insight into system functionality and its impact on learners. By examining these metrics, it will give a better understanding of the system’s ability to meet individual needs and improve each user’s learning experience.</p>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/edu_project/overall.png"  alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Evaluation of Models Across Multiple Metrics</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">Overall, the GAN model outperforms all models in all performance metrics. It shows the highest value of all performance metrics. This shows the GAN model has a great degree of ability to provide better recommendations compared to the old technique of CF and CB. On the other hand, the Multi-GAN has shown the worst performance across all metrics, the worst performance is then followed by Multi-MDGAN. This indicates that the "Multi" framework of GAN is not a suitable model for this task. The MDGAN model has shown some degree of ability in the recommendations task which this model outperforms the CF model in all metrics. However, in comparison with CB, the MDGAN model manages to outperform the CB model only in the HR@5 metric. So it can be seen that the MDGAN model has a great degree in recommending accurate courses compared to baseline models as shown by HR@5 metrics. But the overall performance of MDGAN is still below the CB model and it is still very far from the winner of this task, the GAN model.</p>
+
+                <h2>Data Product</h2>
+
+                <p style="text-align: justify;">The data product was created by using a third-party tool, Anvil to build a website-based recommendation system. The recommendation engine includes all the models used in this project including generative models and baseline models. In this case, there are six different options for recommendation engines which are Generative Adversarial Networks, Multiple Generative Adversarial Networks, Multi-Discriminators Generative Adversarial Networks, Multiple Multi-Discriminators Generative Adversarial Networks, Collaborative Filtering, and Content-Based Filtering.</p>
+
+                <div class="entry__media">
+                        <iframe width="100%" height="400px" scrolling="no" frameborder="no" allow="autoplay" src="images/edu_project/rec_demo.mp4"></iframe>
+                </div>
+
+                <h2>Contribution</h2>
+
+                <p style="text-align: justify;">The successful implementation of generative AI in educational recommendation systems makes a significant contribution to this field. The main contribution of this project is to develop an educational recommendation system based on generative models. To the best of my knowledge, this project <b>first introduces GAN to the recommendation task in the education field</b>. Next, the project identified the generative model has shown to have a <b>high degree of performance as a recommendation engine</b>. The results showed that the use of generative models especially the GAN model increased up to 200% in all metrics which is an extremely significant improvement over baseline models. This contribution advances the field of educational recommendation systems providing a new approach to enhancing the performance of the recommendation system, with potential applications in educational platforms or educational institutions.</p>
+                
+                <h2>Conclusion</h2>
+
+                <p style="text-align: justify;">In conclusion, the project highlights the transformative potential of generative artificial intelligence (AI) in revolutionizing personalized learning in education. By implementing generative models in educational recommendation systems, significant improvements in recommendation accuracy and relevance were achieved. The project underscores the importance of continued research and innovation in leveraging AI technologies to create adaptive and personalized learning environments, ultimately enhancing the educational experience for students worldwide.</p>
+                
+                <p class="blog-content__tags">
+                    <span>Post Tags</span>
+
+                    <span class="blog-content__tag-list">
+                        <a href="#0">Generative AI</a>
+                        <a href="#0">Education</a>
+                        <a href="#0">Personalized Learning</a>
+                        <a href="#0">GANs</a>
+                        <a href="#0">GANs Variant</a>
+                        <a href="#0">Generative Models</a>
+                        <a href="#0">AI Engineering</a>
+                        <a href="#0">Machine Learning</a>
+                        <a href="#0">Deep Learning</a>
+                        <a href="#0">Data Science</a>
+                        <a href="#0">Recommendation System</a>
+                        <a href="#0">Collaborative Filtering</a>
+                        <a href="#0">Content-Based Filtering</a>
+                    </span>
+
+                </p>
+            </div><!-- end blog-content__main -->
+        </div> <!-- end blog-content -->
+        
+
+    </article>
+
+
+    <!-- footer
+    ================================================== -->
+    <section id ="contact" class="s-contact">
+        <footer>
+            <div class="row">
+                <div class="col-full">
+    
+                    <div class="footer-logo">
+                        <a class="footer-site-logo" href="#0"><img src="images/logo-dimas.png" alt="Homepage"></a>
+                    </div>
+    
+                    <ul class="footer-social">
+    
+                        <li><a href="tel:+601112308670">
+                            <i class="im im-phone" aria-hidden="true">
+                            </i>
+                            <span>Phone</span>
+                        </a></li>
+                        <li><a href="mailto:dimashidayat2610@gmail.com">
+                            <i class="im im-mail" aria-hidden="true"></i>
+                            <span>Email</span>
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/in/dimas-hidayatullah-4a727620b/">
+                            <i class="im im-linkedin" aria-hidden="true" style="margin-bottom: 3px;"></i>
+                            <span>LinkedIn</span>
+                        </a></li>
+                    </ul>
+                        
+                </div>
+            </div>
+    
+            <div class="row footer-bottom">
+    
+                <div class="col-twelve">
+                    <div class="copyright">
+                        <span>© Copyright Hola 2017</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>	
+                        <span>Edited by <a>Dimas Hidayat</a></span>	
+                    </div>
+    
+                    <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+            </div> <!-- end footer-bottom -->
+    
+        </footer> <!-- end footer -->
+    </section>
+    
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

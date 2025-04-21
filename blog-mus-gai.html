@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Recomposing Classical Music with GAI</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/logo_web.png" type="image/x-icon">
+    <link rel="icon" href="images/logo_web.png" type="image/x-icon">
+
+</head>
+
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+            
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo-dimas.png" alt="Homepage"></a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li><a href="index.html#home" title="home">Home</a></li>
+                <li><a href="index.html#about" title="about">About</a></li>
+                <li class="current"><a class="smoothscroll" href="#works" title="blog">Project</a></li>
+                <li><a href="#resume" title="resume">Resume</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>	
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <article class="blog-single">
+
+        <!-- page header/blog hero
+        ================================================== -->
+        <div class="page-header page-header--single page-hero" style="background-image:url(images/blog/blog-bg-02.jpg)">
+        
+            <div class="row page-header__content narrow">
+                <article class="col-full">
+                    <div class="page-header__info">
+                        <div class="page-header__cat">
+                            <a href="#0">Generative AI</a><a href="#0">Music</a>
+                        </div>
+                    </div>
+                    <h1 class="page-header__title">
+                        <a href="#0" title="">
+                            Resurrecting Classical Masterpieces with Generative AI.
+                        </a>
+                        <div>
+                            <a style="font-size: 20px;white-space: pre-line">Classical Legends Reborn.</a>
+                        </div>
+                    </h1>
+                    <ul class="page-header__meta">
+                        <li class="date">March, 2024</li>
+                    </ul>
+                    
+                </article>
+            </div>
+    
+        </div> <!-- end page-header -->
+
+        <div class="row blog-content">
+            <div class="col-full blog-content__main">
+
+                <h2 style="margin-top: 10px;">The Classical Music</h2>
+
+                <p class="drop-cap" style="text-align: justify;">
+                    Classical music, rich in history and emotion, continues to inspire despite its decline in popularity. With the advent of <b>Generative AI, classical music is evolving in exciting ways</b>. AI can analyze and recreate the styles of great composers like Bach and Mozart, offering <b>fresh compositions and expanding creative possibilities for modern musicians</b>. This technology helps introduce classical music to new audiences while posing challenges in ensuring originality and defining the role of human composers in the AI-driven creative process.  
+                </p>
+                
+                <h2>Problems in Classical Music</h2>
+                <p style="text-align: justify;">
+                    Classical music faces a <b>decline in popularity</b>, <b>limited access to skilled composers</b>, and challenges in <b>engaging modern audiences</b>. Traditional methods may not fully explore new creative possibilities, and ensuring originality in compositions is difficult. AI can address these issues by revitalizing classical music with innovative compositions, democratizing compositional tools, preserving classical heritage, streamlining production processes, and creating engaging educational experiences for new listeners.
+                </p>
+
+                <h2>Music Data</h2>
+                <p style="text-align: justify;">
+                    The dataset used in this project was obtained from <a href="https://www.kaggle.com/datasets/soumikrakshit/classical-music-midi">kaggle</a>. Where the dataset consists of classical piano midi files containing compositions of 19 famous composers scraped from <a href="http://www.piano-midi.de/">piano-midi website</a>. From all famous composers, this project utilizes classical music from only one composer which is known as Chopin. The reason why only one composer was used is due to resource limitation, cost, and time efficiency.
+                </p>
+
+                <h2>EDA</h2>
+                <p style="text-align: justify;">
+                    The data underwent a sampling process where only Chopin's music will be chosen. There are two types of EDA, the first type of EDA is directly toward the exploration of the music composition itself without data preprocessing where the music sheet and audio are produced to get a better understanding of the music on how music sounds and how the music notes and durations looks like.
+                </p>
+
+                <h3>Music Composition</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/eda_sheet_music.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Sample of the Chopin-composed Music Sheet Music</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1378839973&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <center>
+                            <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Sample of the Chopin-composed Music</figcaption>
+                        </center>
+                    </div>
+                </div>
+            
+                <p style="text-align: justify; margin-top: 14px;">The process continued with the data preprocessing where each of the Chopin-composed music underwent clef splitting where the treble and bass clef were separated. Each of the clefs was undergone the music element extraction where the notes, chords, and durations were extracted for the data frame construction. There are two total data frames were created which are the treble data frame and bass data frame, each representing the treble clef and bass clef respectively. Each data frame consists of two features where the first feature is the notes and chords while the second feature is durations. The chords and notes were extracted based on their pitch frequency while the durations were extracted based on the durations type. Each of the data frames underwent the second type of EDA which is more toward data analytics. The EDA includes univariate analysis, multivariate analysis, and outliers analysis.</p>
+
+                <h3>Univariate Analysis</h3>
+                <h4 style="margin-top: 5px;">Bass Clef</h4>
+                <h5 style="margin-top: 5px;">Pitch Frequency</h5>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/pitch_frequency_distribution_bass.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Pitch Frequency Distribution for Bass Clef Data</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">The distribution of pitch frequency is positively skewed with the modes around 160 hz. The majority of the chords and notes used are in the frequencies of 50 to 300 hz. While chords and notes with frequencies around 500 hz and above can be seen as minority chords and notes used in the Chopin-composed music.</p>
+                <h5 style="margin-top: 5px;">Duration</h5>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/durations_distribution_bass.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Duration Distribution for Bass Clef Data</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">The majority of the durations used are 8th notes with around 17500 counts followed by 16th notes with around 14000 counts. The quarter notes are in the third position with around 7500 counts. Other than the mentioned durations which are whole note, half note, complex note, breve note, and 32nd note are the minority durations in the Chopin-composed music.</p>
+                
+                <h4 style="margin-top: 5px;">Treble Clef</h4>
+                <h5 style="margin-top: 5px;">Pitch Frequency</h5>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/pitch_frequency_distribution_treble.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Pitch Frequency Distribution for Treble Clef Data</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">The distribution of pitch frequency is positively skewed with the modes around 350 hz. The majority of the chords and notes used are in the frequencies of 200 to 1300 hz. While chords and notes with frequencies around 1500 hz and above can be seen as minority chords and notes used in the Chopin-composed music.</p>
+                <h5 style="margin-top: 5px;">Duration</h5>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/durations_distribution_treble.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">Duration Distribution for Bass Clef Data</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">The majority of the duration used is 16th notes followed by 8th note. The quarter note is in the third position with around 6500 counts. Other than the mentioned durations which are whole note, half note, complex note, breve note, and 32nd note are the minority durations in Chopin composed music.</p>
+                
+                <h2>Pre-processing and Modelling</h2>
+
+                <p style="text-align: justify;">
+                    There are so many generative models available which can be used in this project. However, among all the generative models, only 4 models will be used which are the autoregressive model known as Recurrent Neural Networks (RNNs) by using Long Short-Term Memory (LSTM) architecture, Variational AutoEncoders (VAEs), Generative Adversarial Networks (GANs) and large language model of Generative Pretrained Transformer (GPT). Another model used in this project is a fusion model which is a combination of three different generative model architecture. The fusion model utilizing the RNNs of Gate Recurrent Units (GRUs) architecture combines VAEs architecture together with GANs architecture. Each of the models requires a different representation of the data, therefore, different preprocessing was applied to the data for each model.</p>
+
+                <h3>Autoregressive Model - LSTM</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/LSTM_framework.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">LSTM Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">LSTM is a type of neural network designed to handle sequence data by maintaining long-term dependencies. It does this by using a memory cell that can store information, along with gates that control the flow of information into and out of the cell. This allows LSTM networks to learn patterns in sequences and make predictions based on them, making them useful for the main task in this project which is classical music recomposition. A detailed explanation of the LSTM framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Recomposing_Classical_Music_With_GAI/tree/main/model/lstm" class="tag-link">model/lstm</a> directory.</p>
+
+                <h3>AutoEncoders Model - VAEs</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/VAE_framework.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">VAEs Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">VAEs is a type of neural network used for generative modeling. It learns to encode input data into a lower-dimensional latent space and then decode it back to the original input. VAEs are trained to maximize the likelihood of the observed data while also maximizing the mutual information between the latent variables and the data. This allows them to generate new data samples that resemble the training data, making them useful for the main task in this project which is classical music recomposition. A detailed explanation of the VAEs framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Recomposing_Classical_Music_With_GAI/tree/main/model/vae" class="tag-link">model/vae</a> directory.</p>
+
+                <h3>Generative Adversarial Networks - GANs</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/GAN_framework.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">GANs Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">GANs is a type of neural network used for generative modeling. It consists of two networks: a generator and a discriminator. The generator creates new data samples, while the discriminator tries to distinguish between real and generated samples. They are trained together in an adversarial manner, where the generator tries to fool the discriminator and the discriminator tries to become better at distinguishing real from fake. This competition leads to the generator learning to create increasingly realistic samples, making GANs useful for the main task in this project which is classical music recomposition. A detailed explanation of the GANs framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Recomposing_Classical_Music_With_GAI/tree/main/model/gan" class="tag-link">model/gan</a> directory.</p>
+
+                <h3>Fusion Model - RNNs-VAEs-GANs</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/FUS_framework.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">RNNs-VAEs-GANs Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">A fusion generative model that combines GRUs, VAEs, and GANs elements would be a complex architecture aimed at capturing the strengths of each component. The GRUs component will be used for sequence modeling. GRUs are a type of RNNs that can capture long-range dependencies in sequences, making them suitable for tasks where the context of previous elements is important. While the VAEs component would handle the latent space modeling. It would encode input data into a latent space representation, which can then be decoded back into the original data. VAEs are useful for learning meaningful representations of data and generating new samples that resemble the training data. Finally, the GANs component would add a competitive training mechanism to improve the realism of the generated samples. The generator part of the GANs would likely be integrated with the VAEs decoder, generating samples from the learned latent space. The discriminator would then provide feedback to both the generator and the VAEs on the realism of the generated samples.
+
+                    In this fusion model, the GRUs would help capture the sequential dependencies in the data, the VAEs would learn a meaningful latent space representation, and the GANs would improve the quality of the generated samples. By combining these components, the model could potentially achieve better performance than using any one component alone. A detailed explanation of the fusion model framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Recomposing_Classical_Music_With_GAI/tree/main/model/fusion" class="tag-link">model/fusion</a> directory.</p>
+
+                <h3>Large Language Model - GPT</h3>
+
+                <div class="entry__media">
+                    <figure>
+                    <center>
+                    <img src="images/music_project/GPT_framework.png" alt="" style="width:95%; height:95%; margin-bottom: 5px;">
+                    <figcaption style="text-align: center; margin-top: 5px; font-style: italic;">GPT Framework</figcaption>
+                    </center>
+                    <figure>
+                </div>
+
+                <p style="text-align: justify;">GPT is a type of deep learning model based on the transformer architecture. It is designed for natural language processing tasks such as text generation, translation, and question answering. However, since text generation is a sequence data and the music also is a sequence data. The GPT should be able to model music data, in a way that captures the structure and patterns of music. GPT is "pre-trained" on a large corpus of musical data, which allows it to learn the nuances of music elements and context. This pre-training is followed by fine-tuning specific tasks to further improve performance. A detailed explanation of the GPT framework as well as the source code can be found in the <a href="https://github.com/dimashidayat99/Recomposing_Classical_Music_With_GAI/tree/main/model/gpt" class="tag-link">model/gpt</a> directory.</p>
+
+                
+                <h2>Results & Evaluation</h2>
+
+                <p style="text-align: justify;">There are three pieces of music generated for each model. The first music was generated by using the key of C major and a tempo of 90 bpm. The second music was generated by using the key of A minor and a tempo of 60 bpm. Finally, the final music was generated by using the key of E minor and a tempo of 120 bpm. All the music generated uses a time signature of 4/4 which is the most common time signature. All the pieces of music was evaluated by the audience and subject matter expert (musician).</p>
+
+                <h3>LSTM</h3>
+                <h4 style="margin-top: 5px;">Results</h4>
+                <h5 style="margin-top: 5px;">Key: C Major, Tempo: 90 Bpm</h5>
+                
+
+                <div class="entry__media" >
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852125345&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: A Minor, Tempo: 60 Bpm</h5>
+
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852126188&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: E Minor, Tempo: 120 Bpm</h5>
+            
+
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852125066&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                
+                <h3>VAEs</h3>
+                <h4 style="margin-top: 5px;">Results</h4>
+                <h5 style="margin-top: 5px;">Key: C Major, Tempo: 90 Bpm</h5>
+                
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852124181&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: A Minor, Tempo: 60 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852124856&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: E Minor, Tempo: 120 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852123776&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                
+                <h3>GANs</h3>
+                <h4 style="margin-top: 5px;">Results</h4>
+                <h5 style="margin-top: 5px;">Key: C Major, Tempo: 90 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129650&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: A Minor, Tempo: 60 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129686&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: E Minor, Tempo: 120 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129428&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                
+                <h3>RNNs-VAEs-GANs</h3>
+                <h4 style="margin-top: 5px;">Results</h4>
+                <h5 style="margin-top: 5px;">Key: C Major, Tempo: 90 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129737&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: A Minor, Tempo: 60 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129746&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: E Minor, Tempo: 120 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129728&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                
+                <h3>GPT</h3>
+                <h4 style="margin-top: 5px;">Results</h4>
+                <h5 style="margin-top: 5px;">Key: C Major, Tempo: 90 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129404&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: A Minor, Tempo: 60 Bpm</h5>
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852129455&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                <h5 style="margin-top: 5px;">Key: E Minor, Tempo: 120 Bpm</h5>
+
+
+                <div class="entry__media">
+                    <div class="featured-image">
+                        <iframe width="100%" style="margin-bottom: 30px;"height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1852126623&color=%23dedede&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    </div>
+                </div>
+                
+                <h3>Overall Evaluation</h3>
+                <p style="text-align: justify;">The LSTM model, while capable of generating a structured music sequence, often lacked of coherent music sequence in terms of synchronization of treble and bass clef. The VAEs model, on the other hand, was successful in generating diverse compositions but struggled with maintaining the musical structure which caused a disorderliness and randomness of music elements generated. The GANs model also has a similar limitation to the VAEs which is struggled with maintaining music structure. The RNNs-VAEs-GANs fusion model attempted to combine the strengths of the VAEs and GANs models with an additional RNNs layer for improved musical structure. While it showed improvements over individual models, it still faced challenges in balancing coherence, diversity, and maintaining musical structure. Despite not being trained on a large corpus of language, the GPT model outperformed all other models in our evaluation. It is able to generate highly coherent, diverse, musical structures and musically pleasing compositions. Its transformer architecture demonstrated a remarkable ability to capture the nuances of classical music, producing compositions that were indistinguishable from human-composed pieces.</p>
+                
+                <h2>Establish Classical Music and AI generated Music</h2>
+
+                <p style="text-align: justify;">Established classical music, crafted over centuries by master composers, embodies a profound legacy of artistic expression and cultural significance, characterized by intricate melodies and harmonies that resonate with deep emotional and intellectual depth. In contrast, AI-generated music represents a novel frontier, leveraging machine learning and algorithms to produce compositions that, while lacking the human touch and historical context of classical masterpieces, offer a fresh perspective and potential for innovation. While AI-generated music may not yet match the depth and complexity of classical compositions, it presents a fascinating evolution of musical creativity, sparking debates about the nature of artistry, the impact of technology on music, and the boundaries of musical expression.</p>
+                
+                <h2>Conclusion</h2>
+
+                <p style="text-align: justify;">In conclusion, this study has explored the use of generative AI for recomposing classical music, focusing on developing algorithms that can produce music similar to classical compositions. Through the evaluation of various generative AI algorithms, I have identified those capable of creating music that is not only pleasant but also approaches the characteristics of classical music especially music generated by GPT. Additionally, by comparing AI-generated classical music compositions with established works in the classical repertoire, I have gained insights into the artistic expression of these compositions, as evaluated by both musicians and audiences. This study highlights the potential of generative AI in music composition, offering new avenues for creative exploration and pushing the boundaries of musical expression.</p>
+
+                <p class="blog-content__tags">
+                    <span>Post Tags</span>
+
+                    <span class="blog-content__tag-list">
+                        <a href="#0">Generative AI</a>
+                        <a href="#0">Music</a>
+                        <a href="#0">Music Composition</a>
+                        <a href="#0">Music Generation</a>
+                        <a href="#0">Classical Music</a>
+                        <a href="#0">Generative Models</a>
+                        <a href="#0">AI Engineering</a>
+                        <a href="#0">Machine Learning</a>
+                        <a href="#0">Deep Learning</a>
+                        <a href="#0">Data Science</a>
+                        <a href="#0">GANs</a>
+                        <a href="#0">VAEs</a>
+                        <a href="#0">RNNs</a>
+                        <a href="#0">LSTM</a>
+                        <a href="#0">GRUs</a>
+                        <a href="#0">Transformers</a>
+                        <a href="#0">GPT</a>
+                        <a href="#0">Fusion Model</a>
+                    </span>
+
+                </p>
+            </div><!-- end blog-content__main -->
+        </div> <!-- end blog-content -->
+        
+
+    </article>
+
+
+    <!-- footer
+    ================================================== -->
+    <section id ="contact" class="s-contact">
+        <footer>
+            <div class="row">
+                <div class="col-full">
+    
+                    <div class="footer-logo">
+                        <a class="footer-site-logo" href="#0"><img src="images/logo-dimas.png" alt="Homepage"></a>
+                    </div>
+    
+                    <ul class="footer-social">
+    
+                        <li><a href="tel:+601112308670">
+                            <i class="im im-phone" aria-hidden="true">
+                            </i>
+                            <span>Phone</span>
+                        </a></li>
+                        <li><a href="mailto:dimashidayat2610@gmail.com">
+                            <i class="im im-mail" aria-hidden="true"></i>
+                            <span>Email</span>
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/in/dimas-hidayatullah-4a727620b/">
+                            <i class="im im-linkedin" aria-hidden="true" style="margin-bottom: 3px;"></i>
+                            <span>LinkedIn</span>
+                        </a></li>
+                    </ul>
+                        
+                </div>
+            </div>
+    
+            <div class="row footer-bottom">
+    
+                <div class="col-twelve">
+                    <div class="copyright">
+                        <span>© Copyright Hola 2017</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>	
+                        <span>Edited by <a>Dimas Hidayat</a></span>	
+                    </div>
+    
+                    <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+            </div> <!-- end footer-bottom -->
+    
+        </footer> <!-- end footer -->
+    </section>
+    
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
